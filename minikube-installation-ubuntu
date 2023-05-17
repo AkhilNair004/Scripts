@@ -5,14 +5,15 @@ sudo apt-get update -y
 
 echo "1st install docker"
 
-sudo apt update && apt -y install docker.io
+sudo apt update
+sudo apt install docker.io -y
 
 sudo systemctl start docker
 sudo systemctl enable docker
 sudo chmod 666 /var/run/docker.sock
 
 echo "Apply updates"
-sudo apt update -y 
+sudo apt update -y
 sudo apt upgrade -y
 
 echo " Download Minikube Binary"
@@ -29,6 +30,7 @@ sudo mv kubectl /usr/local/bin/
 kubectl version -o yaml
 
 
-echo "Start the minikube"
-minikube start 
+.......................
+
+minikube start
 minikube status
