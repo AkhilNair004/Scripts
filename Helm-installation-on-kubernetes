@@ -1,0 +1,10 @@
+#/bin/bash
+
+#Download the package from remote repo
+ curl -fsSL -o get_helm.sh https://raw.githubusercontent.com/helm/helm/main/scripts/get-helm-3
+
+#change the permssion of the downloaded file
+chmod 700 get_helm.sh
+
+#Execute the shell sript
+./get_helm.sh
